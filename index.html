@@ -57,13 +57,13 @@
       <div class="text">Caption Three</div>
     </div>
   
-    <!-- Next and previous buttons -->
+    <!-- Boutons suivants et précédents -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
   
-  <!-- The dots/circles -->
+  <!-- Les points/cercles -->
   <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
@@ -78,10 +78,11 @@
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <h2>Front Side 1</h2>
+                        <h2>BONJOUR</h2>
                     </div>
                     <div class="flip-box-back">
-                        <h2>Back Side 1</h2>
+                        <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -92,7 +93,8 @@
                         <h2>Front Side 2</h2>
                     </div>
                     <div class="flip-box-back">
-                        <h2>Back Side 2</h2>
+                        <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -103,7 +105,8 @@
                         <h2>Front Side 3</h2>
                     </div>
                     <div class="flip-box-back">
-                        <h2>Back Side 3</h2>
+                        <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -116,7 +119,8 @@
                         <h2>Front Side 4</h2>
                     </div>
                     <div class="flip-box-back">
-                        <h2>Back Side 4</h2>
+                        <h2>B Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -127,7 +131,8 @@
                         <h2>Front Side 5</h2>
                     </div>
                     <div class="flip-box-back">
-                        <h2>Back Side 5</h2>
+                        <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -138,58 +143,98 @@
                         <h2>Front Side 6</h2>
                     </div>
                     <div class="flip-box-back">
-                        <h2>Back Side 6</h2>
+                        <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+                        </h2>
                     </div>
                 </div>
             </div>
         </div>
 
-        <section id="Formaire">
+        <section id="Formulaire">
 
         </section>
-        <div class="container">
-            <form action="action_page.php">
-              <div class="row">
-                <div class="col-25">
-                  <label for="fname">First Name</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="lname">Last Name</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="country">Country</label>
-                </div>
-                <div class="col-75">
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="subject">Subject</label>
-                </div>
-                <div class="col-75">
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <input type="submit" value="Submit">
-              </div>
-            </form>
+        <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclusion du fichier CSS externe -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulaire Responsive</title>
+</head>
+
+     <!-- Container pour centrer le formulaire -->
+     <div class="container">
+      <!-- Formulaire commence ici -->
+      <form>
+          <!-- Champ pour le nom -->
+          <div class="form-group">
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" name="nom" required>
           </div>
+
+          <!-- Champ pour le prénom -->
+          <div class="form-group">
+              <label for="prenom">Prénom :</label>
+              <input type="text" id="prenom" name="prenom" required>
+          </div>
+
+          <!-- Champ pour le pays -->
+          <div class="form-group">
+              <label for="pays">Pays :</label>
+              <input type="text" id="pays" name="pays" required>
+          </div>
+
+          <!-- Zone de texte pour le message -->
+          <div class="form-group">
+              <label for="message">Message :</label>
+              <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <!-- Case à cocher pour l'acceptation des conditions -->
+          <div class="checkbox-group">
+              <label>
+                  <input type="checkbox" id="agree" name="agree" required>
+                  Je confirme avoir lu et accepté les conditions d'utilisation.
+              </label>
+          </div>
+
+          <!-- Bouton d'envoi -->
+          <button type="submit" class="submit-btn">Envoyer</button>
+      </form>
+      <!-- Formulaire se termine ici -->
+  </div>
+  <!-- Container se termine ici -->
+
+ <!-- Footer commence ici -->
+    <footer class="footer">
+        <!-- Div pour les coordonnées et les icônes de médias sociaux -->
+        <div class="footer-content">
+            <div class="contact-info">
+                <!-- Coordonnées -->
+                <p>Nom: John Doe</p>
+                <p>Email: johndoe@example.com</p>
+            </div>
+            <!-- Icônes de médias sociaux avec des liens cliquables -->
+            <div class="social-icons">
+                <!-- Icône LinkedIn -->
+                <a href="https://www.linkedin.com/in/dorian-ferreol-0a0a2124b" target="_blank">
+                    <img src="./image/link.png "alt="LinkedIn">
+                </a>
+                <!-- Icône Twitter -->
+                <a href="https://www.linkedin.com/in/dorian-ferreol-0a0a2124b" target="_blank">
+                    <img src="./image/facebook.png" alt="Twitter">
+                </a>
+                <!-- Icône Instagram -->
+                <a href="https://www.instagram.com/votreprofil" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer se termine ici -->
+
 
 
 
