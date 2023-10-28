@@ -58,3 +58,27 @@ function scrollToTop() {
   document.body.scrollTop = 0; // Pour les navigateurs Safari
   document.documentElement.scrollTop = 0; // Pour les autres navigateurs
 }
+//on passe au footer //
+// Récupère l'élément du footer
+const footer = document.getElementById('myFooter');
+
+// Récupère la position de défilement précédente
+let lastScrollPosition = window.pageYOffset;
+
+// Ajoute un écouteur d'événements pour le défilement de la page
+window.addEventListener('scroll', function() {
+    // Récupère la position de défilement actuelle
+    const currentScrollPosition = window.pageYOffset;
+
+    // Vérifie si l'utilisateur fait défiler vers le bas ou vers le haut
+    if (currentScrollPosition > lastScrollPosition) {
+        // L'utilisateur fait défiler vers le bas, cache le footer
+        footer.classList.add('hide-footer');
+    } else {
+        // L'utilisateur fait défiler vers le haut, affiche le footer
+        footer.classList.remove('hide-footer');
+    }
+
+    // Met à jour la position de défilement précédente
+    lastScrollPosition = currentScrollPosition;
+});

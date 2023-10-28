@@ -302,7 +302,7 @@ h1{
 /* Police et arrière-plan du corps */
 body {
   font-family: Arial, sans-serif;
-  background-color: #000000;
+  background-color: #615a5a;
 }
 
 /* Styles pour le conteneur du formulaire */
@@ -394,4 +394,34 @@ body {
 #scrollTopBtn:hover {
   background-color: #0056b3;
 }
+
+/*on passe au footer*/
+/* Styles pour le footer */
+#myFooter {
+  background-color: black;
+  color: white;
+  position: fixed; /* Fixe le footer en bas de la page */
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  display: none; /* Cache initialement le footer */
+  transition: bottom 0.3s ease; /* Ajoute une transition pour l'effet de cache */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 100px; /* Ajustez la largeur de l'image selon vos besoins */
+  height: auto;
+}
+
+/* Styles pour cacher le footer lors du défilement vers le bas */
+.hide-footer {
+  bottom: -100px; /* Déplace le footer vers le bas, le cachant de la vue */
+}
+
 
