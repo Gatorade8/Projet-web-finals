@@ -394,34 +394,30 @@ body {
 #scrollTopBtn:hover {
   background-color: #0056b3;
 }
-
 /*on passe au footer*/
-/* Styles pour le footer */
-#myFooter {
-  background-color: black;
-  color: white;
-  position: fixed; /* Fixe le footer en bas de la page */
-  bottom: 0;
-  width: 100%;
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
   text-align: center;
-  padding: 20px 0;
-  display: none; /* Cache initialement le footer */
-  transition: bottom 0.3s ease; /* Ajoute une transition pour l'effet de cache */
 }
 
-.footer-content {
-  display: flex;
-  justify-content: center;
+/* Styles pour les icônes sociales */
+.social-icons {
+  display: flex; /* Utiliser la mise en page en ligne */
+  justify-content: center; /* Centrer horizontalement les éléments enfants */
 }
 
-.footer-logo {
-  width: 100px; /* Ajustez la largeur de l'image selon vos besoins */
-  height: auto;
+/* Styles pour les liens des icônes sociales */
+.social-icons a {
+  margin: 0 10px; /* Espace entre les icônes */
 }
 
-/* Styles pour cacher le footer lors du défilement vers le bas */
-.hide-footer {
-  bottom: -100px; /* Déplace le footer vers le bas, le cachant de la vue */
+/* Styles pour les images des icônes */
+.icon-linkedin img,
+.icon-twitter img,
+.icon-facebook img {
+  width: 50px; /* Définir la largeur des icônes */
+  height: 50px; /* Définir la hauteur des icônes */
 }
-
 
