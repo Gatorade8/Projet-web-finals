@@ -12,7 +12,7 @@ function myFunction() {
   }
 }
 
-// Définit un indice pour suivre les diapositives
+// Définit un indice pour suivre les diapositivess
 let slideIndex = 0;
 
 // Appelle la fonction showSlides pour afficher les diapositives
