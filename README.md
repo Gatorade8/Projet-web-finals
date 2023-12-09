@@ -16,6 +16,14 @@ But est de faire un e-Portfolio qui à pour but de nous améliorer en programmat
 
 ✔️ Rendre le site adaptatif pour les mobiles et tablettes.
 
+# Validation
+✔️ Validé par la W3C
+
+✔️ Validé par la wcag 2.0 AA
+
+✔️ Responsive 
+
+
 
 
  
