@@ -98,7 +98,6 @@ display: none;
   color: #f1f1f1;
   float: left;
   margin-top: -50px;
-  background-color: #007bff;
 } 
 
 * {box-sizing:border-box} /* Modèle de boîte universel pour tous les éléments */
@@ -222,6 +221,7 @@ animation-duration: 1.5s;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  align-items: center;
 }
 
 /* Faire une rotation horizontale lorsque vous passez la souris sur le conteneur de la boîte à retournement */
@@ -306,6 +306,9 @@ backface-visibility: hidden;
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+  
+  
+  
 }
 
 /* Mise en page réactive - lorsque la largeur de l'écran est inférieure à 600 px, les deux colonnes s'empilent l'une sur l'autre au lieu de se côtoyer. */
