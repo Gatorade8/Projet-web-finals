@@ -7,9 +7,13 @@ But est de faire un e-Portfolio qui à pour but de nous améliorer en programmat
 
 # Objectifs: 
 ✔️ Utiliser les balises HTML pour la construction d'une page web.
+
 ✔️ Utiliser le CSS pour la stylisation de la page.
+
 ✔️ Ajouter des effets CSS (animations).
+
 ✔️ Utiliser Javascript pour dynamiser la page et contrôler la saisie utilisateur.
+
 ✔️ Rendre le site adaptatif pour les mobiles et tablettes.
 
 
