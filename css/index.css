@@ -30,7 +30,7 @@ h1{
 /* Ajout d'un fond noir à la barre de navigation */
 .topnav {
 background-color: #333;
-overflow: hidden;
+overflow: hidden;/* Le contenu débordant sera masqué si ça dépasse la limite de la page  */
 }
 
 /* Style des liens à l'intérieur de la barre de navigation */
@@ -40,7 +40,7 @@ display: block;
 color: #f2f2f2;
 text-align: center;
 padding: 14px 16px;
-text-decoration: none;
+text-decoration: none;/* faire en sorte que les lien ne soient pas souligner */
 font-size: 17px;
 }
 
@@ -58,7 +58,7 @@ color: white;
 
 /* Cacher le lien qui doit ouvrir et fermer la barre de navigation supérieure sur les petits écrans */
 .topnav .icon {
-display: none;
+display: none;/* n'est pas visible pour l'utilisateur */ 
 }
 
 /* Lorsque la largeur de l'écran est inférieure à 600 pixels, masquer tous les liens, à l'exception du premier ("Accueil"). Afficher le lien qui contient l'ouverture et la fermeture de la barre de navigation supérieure (.icon) */
@@ -79,7 +79,7 @@ display: none;
     top: 0;
   }
   .topnav.responsive a {
-    float: none;
+    float: none;/*permet de rétablir l'élément à son affichage normal */
     display: block;
     text-align: left;/**positionne le texte à droite**/
   }
@@ -100,7 +100,7 @@ display: none;
   margin-top: -50px;
 } 
 
-* {box-sizing:border-box} /* Modèle de boîte universel pour tous les éléments */
+*
 
 
 
@@ -113,37 +113,6 @@ position: relative;
 margin: auto;
 }
 
-/* Cacher les images par défaut */
-.mySlides {
-display: none;
-}
-
-/* Bouton suivant et précédents */
-.prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-margin-top: -22px;
-padding: 16px;
-color: white;
-font-weight: bold;
-font-size: 18px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
-}
-
-/* Positionner le bouton "suivant" à droite */
-.next {
-right: 0;
-border-radius: 3px 0 0 3px;
-}
-
-/* Au survol, ajouter une couleur de fond noire légèrement transparente */
-.prev:hover, .next:hover {
-background-color: rgba(185, 65, 65, 0.8);
-}
 
 /* Texte de légende */
 .text {
@@ -165,22 +134,6 @@ position: absolute;
 top: 0;
 }
 
-/* Les points/balles/indicateurs */
-.dot {
-cursor: pointer;
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
-}
-
-/* Actif, survol des points */
-.active, .dot:hover {
-background-color: #717171;
-}
 
 /* Animation de fondu */
 .fade {
@@ -206,7 +159,6 @@ animation-duration: 1.5s;
 
 /* Conteneur de boîte à retournement */
 .flip-box {
-  background-color: transparent;
   width: 300px;
   height: 200px;
   border: 1px solid #f1f1f1;
@@ -247,17 +199,15 @@ animation-duration: 1.5s;
 /* Styles pour les conteneurs des boîtes à retournement */
 .flip-box-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;/* indique que les éléments flexibles peuvent être placés sur plusieurs lignes si nécessaire pour éviter le débordement.*/
   justify-content: center;
   gap: 10px; /* Espace entre les boîtes à retournement */
 }
 
 /* Styles pour chaque boîte à retournement */
 .flip-box {
-  background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
   perspective: 1000px; /* Retirer ceci si vous ne voulez pas l'effet 3D */
   margin: auto;
   margin-top: 30px;
@@ -271,6 +221,8 @@ animation-duration: 1.5s;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  
+
 }
 
 /* Effectuer un retournement horizontal lorsque vous passez la souris sur le conteneur de la boîte à retournement.*/
@@ -282,6 +234,7 @@ animation-duration: 1.5s;
 .flip-box-front, .flip-box-back {
   /* Positionnement absolu */
 position: absolute;
+
   
 /* Définition de la largeur à 100% */
 width: 100%;
@@ -348,7 +301,7 @@ background-color: #615a5a;
 /* Styles pour les libellés des champs de formulaire */
 .form-group label {
   display: block; /* Affiche le libellé sur une nouvelle ligne */
-  font-weight: bold;
+  font-weight: bold;/*texte en gras*/
   margin-bottom: 5px; /* Espacement en bas du libellé */
 }
 
@@ -412,7 +365,7 @@ background-color: #615a5a;
   border-radius: 5px;
   cursor: pointer;
   padding: 10px 20px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;/*ease pour fluidifier la montée*/
 }
 
 #scrollTopBtn:hover {
@@ -421,7 +374,7 @@ background-color: #615a5a;
 /*on passe au footer*/
 
 footer {
-  background-color: #f1f1f1;
+  background-color: #463737;
   padding: 20px;
   text-align: center;
 }
