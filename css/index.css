@@ -256,7 +256,7 @@ backface-visibility: hidden;
 
 /* Style de la face arrière */
 .flip-box-back {
-  background-color: dodgerblue;
+  background-color: rgb(30, 144, 255);
   color: white;
   transform: rotateY(180deg);
   
@@ -287,7 +287,7 @@ background-color: #615a5a;
   max-width: 500px; /* Largeur maximale du formulaire */
   margin: 0 auto; /* Centre le formulaire horizontalement */
   background-color: #fff;
-  padding: 20px;
+  padding: 25px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px; /* Espacement du haut */
